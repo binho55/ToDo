@@ -6914,7 +6914,7 @@
       ]
     },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
+      "sha512": "UMlN++q5qqzQ2HH+uOrKxN5fmBXMQDhrYkSaPJxhmyzfJaFPirrVr1raim/Ocq1psAZoB9+7JSAf0GDAX35wUg==",
       "type": "package",
       "path": "microsoft.extensions.platformabstractions/1.1.0",
       "files": [
@@ -13124,26 +13124,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opet\\.nuget\\packages\\": {},
+    "C:\\Users\\heral.HERALDOJUNIOR\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\opet\\source\\repos\\ToDo\\ToDoMvc\\ToDoMvc.csproj",
+      "projectUniqueName": "C:\\Users\\heral.HERALDOJUNIOR\\source\\repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
       "projectName": "ToDoMvc",
-      "projectPath": "C:\\Users\\opet\\source\\repos\\ToDo\\ToDoMvc\\ToDoMvc.csproj",
-      "packagesPath": "C:\\Users\\opet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opet\\source\\repos\\ToDo\\ToDoMvc\\obj\\",
+      "projectPath": "C:\\Users\\heral.HERALDOJUNIOR\\source\\repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
+      "packagesPath": "C:\\Users\\heral.HERALDOJUNIOR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\heral.HERALDOJUNIOR\\source\\repos\\ToDo\\src\\ToDoMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\opet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\heral.HERALDOJUNIOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

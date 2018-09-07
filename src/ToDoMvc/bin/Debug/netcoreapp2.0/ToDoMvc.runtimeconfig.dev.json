@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\opet\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\opet\\.nuget\\packages",
+      "C:\\Users\\heral.HERALDOJUNIOR\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\heral.HERALDOJUNIOR\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }

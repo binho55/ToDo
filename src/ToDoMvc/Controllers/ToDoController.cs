@@ -3,41 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ToDoMvc.Models.View;
+using ToDoMvc.Services;
+using ToDoMvc.Models;
+
 
 namespace ToDoMvc.Controllers
 {
     public class ToDoController : Controller
     {
-        public IActionResult Index()
+
+        private readonly IToDoItemService _toDoItemService;
+
+        public ToDoController(IToDoItemService service)
         {
-            var vm = new Models.View.ToDoViewModel()
+            _toDoItemService = service;
+        }
+        public async Task<IActionResult> Index()
+        {
+            //busca items de algum lugar
+            //se necessario criar uma view model
+            //encaminha para view
+            var vm = new ToDoViewModel
             {
-                Items = new List<Models.ToDoItem>()
-
-
-                {
-                    new Models.ToDoItem{
-                    Id = Guid.NewGuid(),
-                    Title = "Item 1",
-                    DueAt = DateTime.Now
-                    }
-
-                    new Models.ToDoItem{
-                    Id = Guid.NewGuid(),
-                    Title = "Item 2",
-                    DueAt = DateTime.Now
-                    }
-
-                    new Models.ToDoItem{
-                    Id = Guid.NewGuid(),
-                    Title = "Item 3",
-                    DueAt = DateTime.Now
-                    }
-                }
-
-
+                Items = await _toDoItemService.GetIncompleteItemAsync()
             };
-
             return View(vm);
         }
     }

@@ -18,15 +18,16 @@
         <tbody>
             @foreach (var item in Model.Items)
             {
-                <tr>
-                    <td>
-                        <input type="checkbox"
-                               name="@item.Id"
-                               value="true"
-                               class="done-checkbox" />
-                    </td>
-                    <td>@item.Title</td>
-                </tr>
+            <tr>
+                <td>
+                    <input type="checkbox"
+                           name="@item.Id"
+                           value="true"
+                           class="done-checkbox" />
+                </td>
+                <td>@item.Title</td>
+                <td>@item.DueAt</td>
+            </tr>
             }
         </tbody>
     </table>
