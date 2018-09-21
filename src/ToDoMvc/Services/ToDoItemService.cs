@@ -1,16 +1,27 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ToDoMvc.Data;
 using ToDoMvc.Models;
 
 namespace ToDoMvc.Services
 {
     public class ToDoItemService : IToDoItemService
     {
-        public Task<IEnumerable<ToDoItem>> GetIncompleteItemAsync()
+        private readonly ApplicationDbContext _context;
+
+        public ToDoItemService(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+
+        public async Task<IEnumerable<ToDoItem>> GetIncompleteItemAsync()
+        {
+            return await _context.Items
+                .Where(i => !i.IsDone)
+                .ToArrayAsync();
         }
     }
 }
