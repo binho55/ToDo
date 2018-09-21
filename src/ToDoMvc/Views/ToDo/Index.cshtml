@@ -1,4 +1,5 @@
 ﻿@model ToDoMvc.Models.View.ToDoViewModel
+@using Humanizer
 
 
 @{
@@ -26,7 +27,7 @@
                            class="done-checkbox" />
                 </td>
                 <td>@item.Title</td>
-                <td>@item.DueAt</td>
+                <td>@item.DueAt.Humanize()</td>
             </tr>
             }
         </tbody>
